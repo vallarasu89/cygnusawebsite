@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logoImg from '../assets/CA-New_Blue_White-Logo-01.png';
+import markImg from '../assets/cygnusa-emblem.png';
 
 interface LogoProps {
   variant?: 'light' | 'dark' | 'white';
@@ -26,6 +27,8 @@ export const Logo: React.FC<LogoProps> = ({
     xl: 'h-16 sm:h-20'
   };
 
+  const currentImg = markOnly ? markImg : logoImg;
+
   return (
     <Link 
       to="/" 
@@ -33,7 +36,7 @@ export const Logo: React.FC<LogoProps> = ({
       aria-label="CYGNUSA Technologies - Home"
     >
       <img 
-        src={logoImg} 
+        src={currentImg} 
         alt="CYGNUSA Technologies"
         className={`${heightMap[size]} w-auto object-contain shrink-0`}
         loading="eager"

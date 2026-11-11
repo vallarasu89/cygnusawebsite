@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
 import { TEAM_MEMBERS } from '../data/teamData';
+import { TrusteeLogosSection } from '../components/TrusteeLogosSection';
 
 interface HomeProps {
   onOpenConsultation?: (service?: string) => void;
@@ -41,11 +42,11 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
 
           {/* Left Text Content */}
           <div className="flex-1 max-w-[700px] text-center lg:text-left">
-            <div className="font-heading font-semibold text-xs sm:text-[13px] tracking-[2px] text-[#0EA5E9] uppercase mb-7">
+            <div className="font-heading font-semibold text-xs sm:text-[13px] tracking-[2px] text-[#0EA5E9] uppercase mb-5">
               6TH GENERATION IT FRONTIER · CHENNAI
             </div>
 
-            <h1 className="font-heading font-extrabold text-4xl sm:text-6xl lg:text-[76px] xl:text-[74px] text-white leading-[1.03] tracking-[-2px]">
+            <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[50px] xl:text-[52px] text-white leading-[1.12] tracking-[-1px]">
               Technology that moves your business <span className="text-[#0EA5E9]">forward.</span>
             </h1>
 
@@ -164,8 +165,8 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start justify-between">
 
             {/* Left Certification Credentials */}
-            <div className="lg:w-[340px] shrink-0 space-y-6">
-              <h2 className="font-heading font-bold text-2xl sm:text-[28px] text-[#0F172A] leading-snug">
+            <div className="lg:w-[340px] shrink-0 space-y-5">
+              <h2 className="font-heading font-bold text-xl sm:text-2xl text-[#0F172A] leading-snug">
                 Customers trusted us across nine sectors
               </h2>
 
@@ -186,27 +187,9 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               </p>
             </div>
 
-            {/* Right Verified Client Names Grid */}
-            <div className="flex-1 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-7 font-heading font-semibold text-base sm:text-[17px] text-[#64748B]">
-              <span>Airports Authority of India</span>
-              <span>TVS</span>
-              <span>Stellantis</span>
-              <span>Coforge</span>
-
-              <span>Watertec</span>
-              <span>AGS</span>
-              <span>Ognitron</span>
-              <span>GoZap</span>
-
-              <span>GoFuel</span>
-              <span>Brandmidas</span>
-              <span>Airportzo</span>
-              <span>Holiday Seasonz</span>
-
-              <span>Mediant Labs</span>
-              <span>Academian</span>
-              <span>NIFT</span>
-              <span>NITTTR Chennai</span>
+            {/* Right Verified Client Logos */}
+            <div className="flex-1 min-w-0 w-full">
+              <TrusteeLogosSection />
             </div>
 
           </div>
@@ -258,21 +241,21 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
             </g>
           </svg>
 
-          <div className="relative font-heading font-bold text-7xl sm:text-9xl lg:text-[120px] leading-none text-white tracking-[-3px]">
+          <div className="relative font-heading font-bold text-5xl sm:text-7xl lg:text-[84px] leading-none text-white tracking-[-2px]">
             25+
           </div>
-          <div className="relative font-medium text-lg sm:text-xl text-[#F0F9FF] mt-3">
+          <div className="relative font-medium text-base sm:text-lg text-[#F0F9FF] mt-2">
             years of leadership experience
           </div>
         </div>
 
         {/* Right Half: Positioning & Four Pillars */}
-        <div className="flex-1 bg-[#F0F9FF] p-10 sm:p-16 lg:p-20 flex flex-col justify-center gap-7">
+        <div className="flex-1 bg-[#F0F9FF] p-10 sm:p-16 lg:p-20 flex flex-col justify-center gap-6">
           <div className="font-heading font-semibold text-xs sm:text-[13px] tracking-[2px] text-[#1E3A8A] uppercase">
             WHO WE ARE
           </div>
 
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-[44px] text-[#0F172A] leading-[1.12] tracking-tight">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[34px] text-[#0F172A] leading-[1.2] tracking-tight">
             A technology partner, not just a service provider.
           </h2>
 
@@ -306,18 +289,18 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
             ONE STRATEGIC PARTNER
           </div>
 
-          <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-[52px] text-[#0F172A] tracking-tight leading-tight mt-4 max-w-[760px]">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-[#0F172A] tracking-tight leading-tight mt-3 max-w-[760px]">
             Advise. Build. Run.
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-14 items-stretch">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-12 items-stretch">
 
             {/* 01 Advise */}
-            <div className="lg:col-span-4 bg-[#1E3A8A] text-white rounded-[20px] p-8 sm:p-10 flex flex-col gap-5 min-h-[460px] lg:mt-12 shadow-lg">
-              <div className="font-heading font-extrabold text-5xl lg:text-[64px] text-[#0EA5E9] leading-none">
+            <div className="lg:col-span-4 bg-[#1E3A8A] text-white rounded-[20px] p-8 sm:p-10 flex flex-col gap-4 min-h-[420px] lg:mt-8 shadow-lg">
+              <div className="font-heading font-extrabold text-4xl lg:text-[44px] text-[#0EA5E9] leading-none">
                 01
               </div>
-              <h3 className="font-heading font-bold text-3xl sm:text-4xl text-white">
+              <h3 className="font-heading font-bold text-2xl sm:text-[26px] text-white">
                 Advise
               </h3>
               <p className="text-base sm:text-[17px] leading-relaxed text-[#e0f2fe]">
@@ -332,17 +315,17 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
             </div>
 
             {/* 02 Build (Primary Standout Card) */}
-            <div className="lg:col-span-4 bg-[#0F172A] text-white rounded-[20px] p-8 sm:p-10 flex flex-col gap-5 min-h-[508px] relative overflow-hidden shadow-2xl border border-slate-800">
+            <div className="lg:col-span-4 bg-[#0F172A] text-white rounded-[20px] p-8 sm:p-10 flex flex-col gap-4 min-h-[460px] relative overflow-hidden shadow-2xl border border-slate-800">
               <div
                 className="absolute -right-16 -top-16 w-64 h-64 rounded-full pointer-events-none"
                 style={{
                   background: 'radial-gradient(circle, rgba(14,165,233,0.5), rgba(15,23,42,0) 70%)'
                 }}
               />
-              <div className="relative font-heading font-extrabold text-5xl lg:text-[64px] text-[#0EA5E9] leading-none">
+              <div className="relative font-heading font-extrabold text-4xl lg:text-[44px] text-[#0EA5E9] leading-none">
                 02
               </div>
-              <h3 className="relative font-heading font-bold text-3xl sm:text-4xl text-white">
+              <h3 className="relative font-heading font-bold text-2xl sm:text-[26px] text-white">
                 Build
               </h3>
               <p className="relative text-base sm:text-[17px] leading-relaxed text-[#cbd5e1]">
@@ -357,11 +340,11 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
             </div>
 
             {/* 03 Run */}
-            <div className="lg:col-span-4 bg-[#F0F9FF] border-[1.5px] border-[#1E3A8A] text-[#0F172A] rounded-[20px] p-8 sm:p-10 flex flex-col gap-5 min-h-[460px] lg:mt-24 shadow-sm">
-              <div className="font-heading font-extrabold text-5xl lg:text-[64px] text-[#1E3A8A] leading-none">
+            <div className="lg:col-span-4 bg-[#F0F9FF] border-[1.5px] border-[#1E3A8A] text-[#0F172A] rounded-[20px] p-8 sm:p-10 flex flex-col gap-4 min-h-[420px] lg:mt-16 shadow-sm">
+              <div className="font-heading font-extrabold text-4xl lg:text-[44px] text-[#1E3A8A] leading-none">
                 03
               </div>
-              <h3 className="font-heading font-bold text-3xl sm:text-4xl text-[#0F172A]">
+              <h3 className="font-heading font-bold text-2xl sm:text-[26px] text-[#0F172A]">
                 Run
               </h3>
               <p className="text-base sm:text-[17px] leading-relaxed text-[#0F172A]">
@@ -390,7 +373,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <div className="font-heading font-semibold text-xs sm:text-[13px] tracking-[2px] text-[#1E3A8A] uppercase">
                 SERVICES
               </div>
-              <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-[#0F172A] tracking-tight leading-tight mt-4">
+              <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-[#0F172A] tracking-tight leading-tight mt-3">
                 End-to-end technology.<br />One strategic partner.
               </h2>
             </div>
@@ -412,7 +395,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="4" /><path d="M12 3v4M12 17v4" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 Virtual CTO &amp; Strategic Advisory
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -428,7 +411,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1A4.5 4.5 0 0 1 17 18z" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 Managed IT &amp; Cloud Services
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -444,7 +427,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" /><path d="M9 12l2 2 4-4" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 Security &amp; Compliance
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -460,7 +443,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 Software &amp; Product Engineering
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -476,7 +459,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect x="6" y="6" width="12" height="12" rx="2" /><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 AI Integration &amp; Automation
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -492,7 +475,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="9" cy="8" r="3" /><circle cx="17" cy="9" r="2.5" /><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 14.5c3 0 5 2 5 5" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 Staff Augmentation
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -508,7 +491,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 Offshore Capability Development Center
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -524,7 +507,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <rect x="3" y="4" width="18" height="6" rx="1.5" /><rect x="3" y="14" width="18" height="6" rx="1.5" /><path d="M7 7h.01M7 17h.01" />
               </svg>
-              <h3 className="font-heading font-bold text-[19px] leading-snug text-[#0F172A]">
+              <h3 className="font-heading font-bold text-[17px] leading-snug text-[#0F172A]">
                 Software &amp; Hardware Reseller
               </h3>
               <p className="text-[15px] leading-relaxed text-[#64748B]">
@@ -545,7 +528,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
             INDUSTRIES
           </div>
 
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-[52px] text-white tracking-tight leading-tight mt-4 max-w-[820px]">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-white tracking-tight leading-tight mt-3 max-w-[820px]">
             Built for the sectors that keep things moving.
           </h2>
 
@@ -559,7 +542,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 background: 'linear-gradient(135deg, #1E3A8A, #0F172A)'
               }}
             >
-              <h3 className="font-heading font-bold text-2xl sm:text-[30px] text-white">
+              <h3 className="font-heading font-bold text-xl sm:text-[22px] text-white">
                 Aviation &amp; Hospitality
               </h3>
               <p className="mt-2.5 text-sm sm:text-[15px] text-[#cbd5e1]">
@@ -575,7 +558,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 background: 'linear-gradient(135deg, #0369a1, #1E3A8A)'
               }}
             >
-              <h3 className="font-heading font-bold text-2xl sm:text-[30px] text-white">
+              <h3 className="font-heading font-bold text-xl sm:text-[22px] text-white">
                 EV &amp; FuelTech
               </h3>
               <p className="mt-2.5 text-sm sm:text-[15px] text-[#e0f2fe]">
@@ -588,7 +571,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               to="/industries/government-public-sector"
               className="ind md:col-span-2 min-h-[220px] sm:min-h-[240px] rounded-[20px] p-7 bg-[#1E293B] border border-slate-700/60 flex flex-col justify-end"
             >
-              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
+              <h3 className="font-heading font-bold text-base sm:text-lg text-white">
                 Government
               </h3>
               <p className="mt-2 text-xs sm:text-sm text-[#cbd5e1]">
@@ -604,7 +587,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 background: 'linear-gradient(135deg, #1E3A8A, #1E293B)'
               }}
             >
-              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
+              <h3 className="font-heading font-bold text-base sm:text-lg text-white">
                 Manufacturing &amp; Automotive
               </h3>
               <p className="mt-2 text-xs sm:text-sm text-[#cbd5e1]">
@@ -617,7 +600,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               to="/industries/banking-financial-services-insurance"
               className="ind md:col-span-2 min-h-[220px] sm:min-h-[240px] rounded-[20px] p-7 bg-[#1E293B] border border-slate-700/60 flex flex-col justify-end"
             >
-              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
+              <h3 className="font-heading font-bold text-base sm:text-lg text-white">
                 FinTech
               </h3>
               <p className="mt-2 text-xs sm:text-sm text-[#cbd5e1]">
@@ -633,7 +616,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 background: 'linear-gradient(135deg, #0369a1, #0F172A)'
               }}
             >
-              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
+              <h3 className="font-heading font-bold text-base sm:text-lg text-white">
                 Edutech
               </h3>
               <p className="mt-2 text-xs sm:text-sm text-[#e0f2fe]">
@@ -646,7 +629,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               to="/industries"
               className="ind md:col-span-2 min-h-[190px] sm:min-h-[200px] rounded-[20px] p-7 bg-[#1E293B] border border-slate-700/60 flex flex-col justify-end"
             >
-              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
+              <h3 className="font-heading font-bold text-base sm:text-lg text-white">
                 Technology
               </h3>
               <p className="mt-2 text-xs sm:text-sm text-[#cbd5e1]">
@@ -662,7 +645,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 background: 'linear-gradient(135deg, #1E3A8A, #0EA5E9)'
               }}
             >
-              <h3 className="font-heading font-bold text-xl sm:text-2xl text-white">
+              <h3 className="font-heading font-bold text-base sm:text-lg text-white">
                 Customer Experience
               </h3>
               <p className="mt-2 text-xs sm:text-sm text-[#F0F9FF]">
@@ -685,7 +668,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               <div className="font-heading font-semibold text-xs sm:text-[13px] tracking-[2px] text-[#1E3A8A] uppercase">
                 FEATURED CASE STUDIES
               </div>
-              <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-[#0F172A] tracking-tight leading-tight mt-4">
+              <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-[#0F172A] tracking-tight leading-tight mt-3">
                 Real platforms. Real operations.
               </h2>
             </div>
@@ -714,7 +697,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 <span className="font-heading font-semibold text-xs tracking-[1.2px] text-[#1E3A8A] uppercase">
                   AFTER-SALES, PARTS &amp; INVENTORY
                 </span>
-                <h3 className="font-heading font-bold text-xl sm:text-[22px] text-[#0F172A]">
+                <h3 className="font-heading font-bold text-lg sm:text-[19px] text-[#0F172A]">
                   APAC Dice App
                 </h3>
                 <p className="text-xs sm:text-sm text-[#64748B]">
@@ -744,7 +727,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 <span className="font-heading font-semibold text-xs tracking-[1.2px] text-[#1E3A8A] uppercase">
                   LICENSED HSD FUEL DISTRIBUTION
                 </span>
-                <h3 className="font-heading font-bold text-xl sm:text-[22px] text-[#0F172A]">
+                <h3 className="font-heading font-bold text-lg sm:text-[19px] text-[#0F172A]">
                   GoFuel Ecosystem
                 </h3>
                 <p className="text-xs sm:text-sm text-[#64748B]">
@@ -774,7 +757,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 <span className="font-heading font-semibold text-xs tracking-[1.2px] text-[#1E3A8A] uppercase">
                   EV FLEET RENTAL &amp; 3PL
                 </span>
-                <h3 className="font-heading font-bold text-xl sm:text-[22px] text-[#0F172A]">
+                <h3 className="font-heading font-bold text-lg sm:text-[19px] text-[#0F172A]">
                   EV Fleet Management Platform
                 </h3>
                 <p className="text-xs sm:text-sm text-[#64748B]">
@@ -804,7 +787,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 <span className="font-heading font-semibold text-xs tracking-[1.2px] text-[#1E3A8A] uppercase">
                   FUEL RETAIL &amp; OUTLET OPERATIONS
                 </span>
-                <h3 className="font-heading font-bold text-xl sm:text-[22px] text-[#0F172A]">
+                <h3 className="font-heading font-bold text-lg sm:text-[19px] text-[#0F172A]">
                   SOP Management System
                 </h3>
                 <p className="text-xs sm:text-sm text-[#64748B]">
@@ -834,7 +817,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 <span className="font-heading font-semibold text-xs tracking-[1.2px] text-[#1E3A8A] uppercase">
                   AIRPORT OPERATIONS
                 </span>
-                <h3 className="font-heading font-bold text-xl sm:text-[22px] text-[#0F172A]">
+                <h3 className="font-heading font-bold text-lg sm:text-[19px] text-[#0F172A]">
                   Passenger Feedback Digitization
                 </h3>
                 <p className="text-xs sm:text-sm text-[#64748B]">
@@ -864,7 +847,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                 <span className="font-heading font-semibold text-xs tracking-[1.2px] text-[#1E3A8A] uppercase">
                   EDTECH · ENGINEERING
                 </span>
-                <h3 className="font-heading font-bold text-xl sm:text-[22px] text-[#0F172A]">
+                <h3 className="font-heading font-bold text-lg sm:text-[19px] text-[#0F172A]">
                   AI-based Web &amp; Mobile LMS
                 </h3>
                 <p className="text-xs sm:text-sm text-[#64748B]">
@@ -895,7 +878,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               GLOBAL PRESENCE
             </div>
 
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-white tracking-tight leading-tight">
               We think globally. Act locally.
             </h2>
 
@@ -970,43 +953,43 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               WHY CYGNUSA
             </div>
 
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-[56px] text-[#0F172A] tracking-tight leading-[1.05]">
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-[#0F172A] tracking-tight leading-[1.15]">
               Technology partner. Not just a vendor.
             </h2>
 
-            <p className="mt-7 font-heading font-semibold text-lg sm:text-xl leading-snug text-[#1E3A8A]">
+            <p className="mt-5 font-heading font-semibold text-base sm:text-lg leading-snug text-[#1E3A8A]">
               We don't just support technology — we strengthen businesses.
             </p>
           </div>
 
           <div className="flex-1 flex flex-col justify-center">
-            <div className="flex gap-7 items-baseline py-7 border-t-[1.5px] border-[#1E3A8A]">
-              <span className="font-heading font-bold text-lg text-[#1E3A8A]">01</span>
-              <span className="font-heading font-semibold text-xl sm:text-[26px] text-[#0F172A]">
+            <div className="flex gap-6 items-baseline py-5 border-t-[1.5px] border-[#1E3A8A]">
+              <span className="font-heading font-bold text-base text-[#1E3A8A]">01</span>
+              <span className="font-heading font-semibold text-base sm:text-[19px] text-[#0F172A]">
                 Senior leadership involvement
               </span>
             </div>
-            <div className="flex gap-7 items-baseline py-7 border-t-[1.5px] border-[#1E3A8A]">
-              <span className="font-heading font-bold text-lg text-[#1E3A8A]">02</span>
-              <span className="font-heading font-semibold text-xl sm:text-[26px] text-[#0F172A]">
+            <div className="flex gap-6 items-baseline py-5 border-t-[1.5px] border-[#1E3A8A]">
+              <span className="font-heading font-bold text-base text-[#1E3A8A]">02</span>
+              <span className="font-heading font-semibold text-base sm:text-[19px] text-[#0F172A]">
                 Unified IT, cloud, security &amp; software expertise
               </span>
             </div>
-            <div className="flex gap-7 items-baseline py-7 border-t-[1.5px] border-[#1E3A8A]">
-              <span className="font-heading font-bold text-lg text-[#1E3A8A]">03</span>
-              <span className="font-heading font-semibold text-xl sm:text-[26px] text-[#0F172A]">
+            <div className="flex gap-6 items-baseline py-5 border-t-[1.5px] border-[#1E3A8A]">
+              <span className="font-heading font-bold text-base text-[#1E3A8A]">03</span>
+              <span className="font-heading font-semibold text-base sm:text-[19px] text-[#0F172A]">
                 Transparent pricing &amp; governance
               </span>
             </div>
-            <div className="flex gap-7 items-baseline py-7 border-t-[1.5px] border-[#1E3A8A]">
-              <span className="font-heading font-bold text-lg text-[#1E3A8A]">04</span>
-              <span className="font-heading font-semibold text-xl sm:text-[26px] text-[#0F172A]">
+            <div className="flex gap-6 items-baseline py-5 border-t-[1.5px] border-[#1E3A8A]">
+              <span className="font-heading font-bold text-base text-[#1E3A8A]">04</span>
+              <span className="font-heading font-semibold text-base sm:text-[19px] text-[#0F172A]">
                 Business-first technology approach
               </span>
             </div>
-            <div className="flex gap-7 items-baseline py-7 border-t-[1.5px] border-b-[1.5px] border-[#1E3A8A]">
-              <span className="font-heading font-bold text-lg text-[#1E3A8A]">05</span>
-              <span className="font-heading font-semibold text-xl sm:text-[26px] text-[#0F172A]">
+            <div className="flex gap-6 items-baseline py-5 border-t-[1.5px] border-b-[1.5px] border-[#1E3A8A]">
+              <span className="font-heading font-bold text-base text-[#1E3A8A]">05</span>
+              <span className="font-heading font-semibold text-base sm:text-[19px] text-[#0F172A]">
                 Long-term partnership mindset
               </span>
             </div>
@@ -1024,7 +1007,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
             LEADERSHIP &amp; TEAM
           </div>
 
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl text-[#0F172A] tracking-tight leading-tight mt-4">
+          <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-[#0F172A] tracking-tight leading-tight mt-3">
             The people behind your technology.
           </h2>
 
@@ -1047,7 +1030,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
                   )}
                 </div>
                 <div className="p-6 flex flex-col gap-1.5">
-                  <h3 className="font-heading font-bold text-[19px] text-[#0F172A]">
+                  <h3 className="font-heading font-bold text-[17px] text-[#0F172A]">
                     {member.name}
                   </h3>
                   <span className="font-semibold text-sm text-[#1E3A8A]">
@@ -1084,7 +1067,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
               CAREERS
             </div>
 
-            <h2 className="font-heading font-bold text-4xl sm:text-5xl lg:text-[52px] text-white tracking-tight leading-[1.08]">
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl lg:text-[38px] text-white tracking-tight leading-[1.15]">
               Join the team building what's next.
             </h2>
 
@@ -1146,8 +1129,8 @@ export const Home: React.FC<HomeProps> = ({ onOpenConsultation }) => {
           }}
         />
 
-        <div className="max-w-[800px] mx-auto relative z-10 space-y-7">
-          <h2 className="font-heading font-bold text-4xl sm:text-6xl lg:text-[72px] leading-[1.04] tracking-[-2px] text-white">
+        <div className="max-w-[800px] mx-auto relative z-10 space-y-6">
+          <h2 className="font-heading font-bold text-2xl sm:text-4xl lg:text-[46px] leading-[1.15] tracking-[-1px] text-white">
             Innovating with technology.<br />
             <span className="text-[#0EA5E9]">Delivering with strategy.</span>
           </h2>
