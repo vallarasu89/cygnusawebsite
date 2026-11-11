@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="24" fill="#0F172A"/>
+  <!-- Stylized C Orbit -->
+  <path d="M 68 28 C 50 16 28 26 24 45 C 20 64 36 82 56 78 C 66 76 74 69 77 60" stroke="#0EA5E9" stroke-width="11" stroke-linecap="round"/>
+  <!-- Central Swoosh / Cross Arch -->
+  <path d="M 34 56 C 45 42 62 44 76 50" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
+  <!-- Orbit Node Dot -->
+  <circle cx="75" cy="33" r="5.5" fill="#38BDF8"/>
+</svg>
+
